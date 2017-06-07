@@ -34,7 +34,7 @@ a:hover {
     text-decoration: none;
 }
 
-div.blur {
+.blur {
     opacity: 0.7;
     background: #000;
     width: 100%;
@@ -45,13 +45,13 @@ div.blur {
     position: fixed;
 }
 
-div.content {
+.content {
     margin: 5% 20% 0 20%;
     color: white;
     line-height: 1.5;
 }
 
-div.content img {
+.content img {
     display: block;
     margin: auto;
     width: 200px;
@@ -63,30 +63,46 @@ div.content img {
     transition:all 0.5s ease-in-out;
 }
 
-div.content img:hover {
+.content img:hover {
     filter: grayscale(0);
 }
 
-div.content div.title{
+.content .title{
     font-family: 'Pompiere', cursive;
     font-size: 36px;
     text-align: center;
 }
 
-div.content div.date{
+.content .date{
     font-family: 'Pompiere', cursive;
     font-size: 24px;
     margin-bottom: 5%;
     text-align: center;
 }
 
-div.content div.description, div.content div.auth {
+.description, .auth {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     margin-bottom: 5%;
 }
 
-div.content div.auth {
+.description {
+    text-align: justify;
+}
+
+.auth {
     margin-top: 10%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 5% 10% 0 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        margin: 5% 5% 0 5%;
+    }
 }
