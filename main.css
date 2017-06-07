@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background: url("http://res.cloudinary.com/divayprakash/image/upload/r_0/v1496830725/bg_bm3vmh.jpg");
+    background: url("./bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
@@ -19,6 +19,19 @@ body {
 *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: rgba(48, 207, 208, 1) !important;
+    text-decoration: none;
 }
 
 div.blur {
@@ -36,6 +49,7 @@ div.content {
     margin: 5% 20% 0 20%;
     color: white;
     line-height: 1.5;
+    text-align: center;
 }
 
 div.content img {
@@ -46,20 +60,26 @@ div.content img {
     margin-bottom: 5%;
     border-radius: 100px;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    filter: grayscale(100%);
+    transition:all 0.5s ease-in-out;
+}
+
+div.content img:hover {
+    filter: grayscale(0);
 }
 
 div.content div.title{
     font-family: 'Pompiere', cursive;
     font-size: 36px;
-    text-align: center;
     margin-bottom: 5%;
 }
 
 div.content div.description, div.content div.auth {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
+    margin-bottom: 5%;
 }
 
-div.content div.description {
-    margin-bottom: 10%;
+div.content div.auth {
+    margin-top: 10%;
 }
