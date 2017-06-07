@@ -49,7 +49,6 @@ div.content {
     margin: 5% 20% 0 20%;
     color: white;
     line-height: 1.5;
-    text-align: center;
 }
 
 div.content img {
@@ -71,12 +70,14 @@ div.content img:hover {
 div.content div.title{
     font-family: 'Pompiere', cursive;
     font-size: 36px;
+    text-align: center;
 }
 
 div.content div.date{
     font-family: 'Pompiere', cursive;
     font-size: 24px;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 div.content div.description, div.content div.auth {
@@ -87,4 +88,5 @@ div.content div.description, div.content div.auth {
 
 div.content div.auth {
     margin-top: 10%;
+    text-align: center;
 }
