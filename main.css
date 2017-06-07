@@ -71,6 +71,11 @@ div.content img:hover {
 div.content div.title{
     font-family: 'Pompiere', cursive;
     font-size: 36px;
+}
+
+div.content div.date{
+    font-family: 'Pompiere', cursive;
+    font-size: 24px;
     margin-bottom: 5%;
 }
 
